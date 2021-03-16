@@ -319,6 +319,7 @@ const Swap = () => {
             </div>
             <div className="col-md-1"/>
             <div className="col-md-5">
+              <div className="shadow p-3 mb-5 bg-white rounded">
               <AppBody>
                 <Wrapper id="swap-page">
                   <ConfirmSwapModal
@@ -517,6 +518,7 @@ const Swap = () => {
             </CardBody>
           </Wrapper>
       </AppBody>
+              </div>
       <AdvancedSwapDetailsDropdown trade={trade} />
             </div>
           </div>
