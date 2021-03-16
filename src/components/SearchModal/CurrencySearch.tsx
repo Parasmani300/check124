@@ -142,7 +142,7 @@ export function CurrencySearch({
       <PaddedColumn gap="14px">
         <RowBetween>
           <Text>
-            {TranslateString(82, 'Select a token')}
+            {TranslateString(82, 'Select a Cryptocurrency')}
             <QuestionHelper
               text={TranslateString(
                 128,
