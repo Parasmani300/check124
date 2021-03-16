@@ -6,9 +6,9 @@ import { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
-// import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
+import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
 import CurrencyInputPanel from 'components/CurrencyInputPanel'
-import CardNav from 'components/CardNav'
+// import CardNav from 'components/CardNav'
 import { AutoRow, RowBetween } from 'components/Row'
 import AdvancedSwapDetailsDropdown from 'components/swap/AdvancedSwapDetailsDropdown'
 import confirmPriceImpactWithoutFee from 'components/swap/confirmPriceImpactWithoutFee'
@@ -269,7 +269,7 @@ const Swap = () => {
         transactionType={syrupTransactionType}
         onConfirm={handleConfirmSyrupWarning}
       />
-      <CardNav />
+      {/* <CardNav /> */}
       <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
@@ -321,7 +321,7 @@ const Swap = () => {
           <div className="col-md-4">
             <AppBody>
                 <Wrapper id="swap-page">
-                  {/* <ConfirmSwapModal
+                  <ConfirmSwapModal
                     isOpen={showConfirm}
                     trade={trade}
                     originalTrade={tradeToConfirm}
@@ -333,7 +333,7 @@ const Swap = () => {
                     onConfirm={handleSwap}
                     swapErrorMessage={swapErrorMessage}
                     onDismiss={handleConfirmDismiss}
-                  /> */}
+                  />
                   <PageHeader
                     title={TranslateString(8, 'Exchange')}
                     description={TranslateString(1192, 'Trade tokens in an instant')}
