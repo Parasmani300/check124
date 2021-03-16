@@ -35,6 +35,7 @@ import useI18n from 'hooks/useI18n'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Carousel from 'react-bootstrap/Carousel'
+import { Chart } from "react-google-charts";
 import AppBody from '../AppBody'
 
 const Swap = () => {
@@ -312,8 +313,28 @@ const Swap = () => {
                     </Carousel.Item>
                   </Carousel>
                 </div>
-                <div className="row">
-                  <p>The chart will be displayed here</p>
+                <div className="row mt-2">
+                  <Chart
+                      width={400}
+                      height={'300px'}
+                      chartType="AreaChart"
+                      loader={<div>Loading Chart</div>}
+                      data={[
+                        ['Year', 'Sales', 'Expenses'],
+                        ['2013', 1000, 400],
+                        ['2014', 1170, 460],
+                        ['2015', 660, 1120],
+                        ['2016', 1030, 540],
+                      ]}
+                      options={{
+                        title: 'Company Performance',
+                        hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+                        vAxis: { minValue: 0 },
+                        // For the legend to fit, we make the chart area smaller
+                        chartArea: { width: '50%', height: '70%' },
+                        // lineWidth: 25
+                      }}
+                    />
                 </div>
             </div>
             <div className="col-md-6">
