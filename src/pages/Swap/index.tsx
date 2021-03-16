@@ -35,7 +35,6 @@ import useI18n from 'hooks/useI18n'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Carousel from 'react-bootstrap/Carousel'
-import { Chart } from "react-google-charts";
 import AppBody from '../AppBody'
 
 const Swap = () => {
@@ -271,7 +270,7 @@ const Swap = () => {
         onConfirm={handleConfirmSyrupWarning}
       />
       <CardNav />
-      <div className="container">
+      <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
                 <div className="row">
@@ -314,27 +313,8 @@ const Swap = () => {
                   </Carousel>
                 </div>
                 <div className="row mt-2">
-                  <Chart
-                      width={420}
-                      height='300px'
-                      chartType="AreaChart"
-                      loader={<div>Loading Chart</div>}
-                      data={[
-                        ['Year', 'Sales', 'Expenses'],
-                        ['2013', 1000, 400],
-                        ['2014', 1170, 460],
-                        ['2015', 660, 1120],
-                        ['2016', 1030, 540],
-                      ]}
-                      options={{
-                        title: 'Company Performance',
-                        hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
-                        vAxis: { minValue: 0 },
-                        // For the legend to fit, we make the chart area smaller
-                        chartArea: { width: '50%', height: '70%' },
-                        // lineWidth: 25
-                      }}
-                    />
+                  {/* Twitter feed */}
+                  <p>Twitter feed</p>
                 </div>
             </div>
             <div className="col-md-6">
