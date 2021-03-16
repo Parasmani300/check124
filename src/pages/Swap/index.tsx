@@ -272,6 +272,14 @@ const Swap = () => {
       <div className="container">
           <div className="row">
             <div className="col-md-6">
+                <div clasName="row">
+                    <p>Hello there</p>
+                </div>
+                <div className="row">
+                  <p>Hi</p>
+                </div>
+            </div>
+            <div className="col-md-6">
             <AppBody>
         <Wrapper id="swap-page">
           <ConfirmSwapModal
