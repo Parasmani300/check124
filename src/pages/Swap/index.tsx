@@ -34,6 +34,7 @@ import Loader from 'components/Loader'
 import useI18n from 'hooks/useI18n'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
+import Carousel from 'react-bootstrap/Carousel'
 import AppBody from '../AppBody'
 
 const Swap = () => {
@@ -273,10 +274,46 @@ const Swap = () => {
           <div className="row">
             <div className="col-md-6">
                 <div className="row">
-                    <p>Hello there</p>
+                  <Carousel fade>
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/bitcoin-1602828809205.png"
+                        alt="First slide"
+                      />
+                      <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src="https://static.dw.com/image/56167112_303.jpg"
+                        alt="Second slide"
+                      />
+
+                      <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src="https://c.ndtvimg.com/2021-02/kq34jumk_cryptocurrency-bitcoin-reuters_625x300_11_February_21.jpg"
+                        alt="Third slide"
+                      />
+
+                      <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  </Carousel>
                 </div>
                 <div className="row">
-                  <p>Hi</p>
+                  <p>The chart will be displayed here</p>
                 </div>
             </div>
             <div className="col-md-6">
