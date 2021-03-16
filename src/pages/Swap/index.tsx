@@ -273,6 +273,7 @@ const Swap = () => {
         <div className="md-6"></div>
         <div className="md-6">
         <AppBody>
+          <div>Hello</div>
         <Wrapper id="swap-page">
           <ConfirmSwapModal
             isOpen={showConfirm}
