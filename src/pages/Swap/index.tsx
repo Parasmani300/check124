@@ -270,10 +270,8 @@ const Swap = () => {
       />
       <CardNav />
       <div className="container">
-        <div className="md-6"></div>
-        <div className="md-6">
         <AppBody>
-          <div>Hello</div>
+          <div><p>Hello</p></div>
         <Wrapper id="swap-page">
           <ConfirmSwapModal
             isOpen={showConfirm}
@@ -471,9 +469,6 @@ const Swap = () => {
           </CardBody>
         </Wrapper>
       </AppBody>
-        </div>
-      
-      </div>
       <AdvancedSwapDetailsDropdown trade={trade} />
     </>
   )
