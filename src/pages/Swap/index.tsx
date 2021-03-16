@@ -272,7 +272,7 @@ const Swap = () => {
       <div className="container">
           <div className="row">
             <div className="col-md-6">
-                <div clasName="row">
+                <div className="row">
                     <p>Hello there</p>
                 </div>
                 <div className="row">
