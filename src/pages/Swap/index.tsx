@@ -269,7 +269,6 @@ const Swap = () => {
         onConfirm={handleConfirmSyrupWarning}
       />
       <CardNav />
-      <div className="container">
         <AppBody>
           <div><p>Hello</p></div>
         <Wrapper id="swap-page">
