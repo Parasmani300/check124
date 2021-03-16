@@ -317,7 +317,8 @@ const Swap = () => {
                   <p>Twitter feed</p>
                 </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-2" />
+            <div className="col-md-4">
             <AppBody>
         <Wrapper id="swap-page">
           <ConfirmSwapModal
