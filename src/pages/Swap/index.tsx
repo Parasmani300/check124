@@ -269,7 +269,7 @@ const Swap = () => {
         onConfirm={handleConfirmSyrupWarning}
       />
       <CardNav />
-      <AppBody >
+      {/* <AppBody >
         <Wrapper id="swap-page">
           <ConfirmSwapModal
             isOpen={showConfirm}
@@ -466,7 +466,7 @@ const Swap = () => {
             </BottomGrouping>
           </CardBody>
         </Wrapper>
-      </AppBody>
+      </AppBody> */}
       <AdvancedSwapDetailsDropdown trade={trade} />
     </>
   )
