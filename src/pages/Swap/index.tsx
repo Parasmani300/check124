@@ -316,7 +316,7 @@ const Swap = () => {
                 <div className="row mt-2">
                   <Chart
                       width={400}
-                      height={'300px'}
+                      height='300px'
                       chartType="AreaChart"
                       loader={<div>Loading Chart</div>}
                       data={[
