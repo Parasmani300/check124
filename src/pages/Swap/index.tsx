@@ -276,7 +276,7 @@ const Swap = () => {
                 <div className="row">
                   <Carousel fade>
                     <Carousel.Item>
-                      <div className="container-fluid">
+                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                         <img
                         className="d-block w-100"
                         src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/bitcoin-1602828809205.png"
@@ -289,7 +289,7 @@ const Swap = () => {
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="container-fluid">
+                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                       <img
                         className="d-block w-100"
                         src="https://static.dw.com/image/56167112_303.jpg"
@@ -302,7 +302,7 @@ const Swap = () => {
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="container-fluid">
+                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                       <img
                         className="d-block w-100"
                         src="https://c.ndtvimg.com/2021-02/kq34jumk_cryptocurrency-bitcoin-reuters_625x300_11_February_21.jpg"
