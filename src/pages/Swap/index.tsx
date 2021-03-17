@@ -35,7 +35,6 @@ import useI18n from 'hooks/useI18n'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Carousel from 'react-bootstrap/Carousel'
-import Navigation from 'components/BootStrapNav/Navigation'
 import AppBody from '../AppBody'
 
 const Swap = () => {
@@ -260,7 +259,6 @@ const Swap = () => {
 
   return (
     <>
-      <Navigation />
       <TokenWarningModal
         isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
         tokens={urlLoadedTokens}

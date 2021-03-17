@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 export default function Navigation() {
     return (
         <>
+            <div className="container-fluid">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,7 +29,8 @@ export default function Navigation() {
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-            </Navbar>    
+            </Navbar> 
+            </div>   
         </>
     )
 }

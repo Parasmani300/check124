@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import { Credentials, StringTranslations } from '@crowdin/crowdin-api-client'
-// import Navigation from 'components/BootStrapNav/Navigation'
+import Navigation from 'components/BootStrapNav/Navigation'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
@@ -123,7 +123,7 @@ export default function App() {
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               {/* <Menu> */}
-                  
+                  <Navigation />
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
