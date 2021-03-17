@@ -276,39 +276,38 @@ const Swap = () => {
                 <div className="row">
                   <Carousel fade>
                     <Carousel.Item>
-                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                         <img
                         className="d-block w-100"
                         src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/bitcoin-1602828809205.png"
                         alt="First slide"
+                        style={{width:"700px", height:"500px"}}
                         />
-                      </div>
                       <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                       <img
                         className="d-block w-100"
                         src="https://static.dw.com/image/56167112_303.jpg"
                         alt="Second slide"
+                        style={{width:"700px", height:"500px"}}
                       />
-                      </div>
+
                       <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="container-fluid" style={{width:"100%", height:"500px !important"}}>
                       <img
                         className="d-block w-100"
                         src="https://c.ndtvimg.com/2021-02/kq34jumk_cryptocurrency-bitcoin-reuters_625x300_11_February_21.jpg"
                         alt="Third slide"
+                        style={{width:"700px", height:"500px"}}
                       />
-                      </div>
+
                       <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
