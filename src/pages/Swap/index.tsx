@@ -272,7 +272,7 @@ const Swap = () => {
       <CardNav />
       <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-7">
                 <div className="row">
                   <Carousel fade>
                     <Carousel.Item>
@@ -317,7 +317,7 @@ const Swap = () => {
                   <p>Twitter feed</p>
                 </div>
             </div>
-            <div className="col-md-2"/>
+            <div className="col-md-1"/>
             <div className="col-md-4">
               <div className="card shadow p-3 mb-5 bg-white rounded">
               <AppBody>
