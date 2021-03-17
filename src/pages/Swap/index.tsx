@@ -280,7 +280,7 @@ const Swap = () => {
                         className="d-block w-100"
                         src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/bitcoin-1602828809205.png"
                         alt="First slide"
-                        style={{width:"700px", height:"500px"}}
+                        style={{width:"800px", height:"400px"}}
                         />
                       <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -292,7 +292,7 @@ const Swap = () => {
                         className="d-block w-100"
                         src="https://static.dw.com/image/56167112_303.jpg"
                         alt="Second slide"
-                        style={{width:"700px", height:"500px"}}
+                        style={{width:"800px", height:"400px"}}
                       />
 
                       <Carousel.Caption>
@@ -305,7 +305,7 @@ const Swap = () => {
                         className="d-block w-100"
                         src="https://c.ndtvimg.com/2021-02/kq34jumk_cryptocurrency-bitcoin-reuters_625x300_11_February_21.jpg"
                         alt="Third slide"
-                        style={{width:"700px", height:"500px"}}
+                        style={{width:"800px", height:"400px"}}
                       />
 
                       <Carousel.Caption>
