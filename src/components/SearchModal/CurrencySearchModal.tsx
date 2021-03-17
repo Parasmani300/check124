@@ -51,6 +51,7 @@ export default function CurrencySearchModal({
   const noListSelected = !selectedListUrl
 
   return (
+    <div className="card shadow p-3 mb-5 bg-white rounded" >
     <Modal isOpen={isOpen} onDismiss={onDismiss} maxHeight={90} minHeight={listView ? 40 : noListSelected ? 0 : 80}>
       {listView ? (
         <ListSelect onDismiss={onDismiss} onBack={handleClickBack} />
@@ -76,5 +77,6 @@ export default function CurrencySearchModal({
         />
       )}
     </Modal>
+    </div>
   )
 }
