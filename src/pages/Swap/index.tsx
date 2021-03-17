@@ -35,8 +35,8 @@ import useI18n from 'hooks/useI18n'
 import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Carousel from 'react-bootstrap/Carousel'
-import AppBody from '../AppBody'
 import Navigation from 'components/BootStrapNav/Navigation'
+import AppBody from '../AppBody'
 
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
