@@ -123,8 +123,9 @@ export default function App() {
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               {/* <Menu> */}
-                  <Navigation />
+                  
                 <BodyWrapper>
+                  <Navigation />
                   <Popups />
                   <Web3ReactManager>
                     <Switch>
