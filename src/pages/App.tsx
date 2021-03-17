@@ -15,6 +15,7 @@ import { RedirectPathToSwapOnly } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
+import Navigation from 'components/BootStrapNav/Navigation'
 
 // import Menu from '../components/Menu'
 
@@ -122,6 +123,7 @@ export default function App() {
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               {/* <Menu> */}
+                  <Navigation />
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
