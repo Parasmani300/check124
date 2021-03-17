@@ -121,7 +121,7 @@ export default function App() {
             value={{ selectedLanguage, setSelectedLanguage, translatedLanguage, setTranslatedLanguage }}
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
-              <Menu>
+              {/* <Menu> */}
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
@@ -142,7 +142,7 @@ export default function App() {
                   </Web3ReactManager>
                   <Marginer />
                 </BodyWrapper>
-              </Menu>
+              {/* </Menu> */}
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>
