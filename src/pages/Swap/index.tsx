@@ -12,7 +12,7 @@ export default function Swap() {
             <div className="main">
       <div className="container">
         {/* this is a drop down */}
-        {view ? 
+    
         <div className="c-Dropdown__wrapper">
           <div className="c-Dropdown__header">
             <h2>Buy Crypto to your wallet</h2>
@@ -74,7 +74,7 @@ export default function Swap() {
             </div>
           </div>
         </div>
-        }
+        
       </div>
     </div>
         </>
