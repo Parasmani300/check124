@@ -1,5 +1,6 @@
 import React from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
+import './style.css';
 
 export default function Swap() {
     return (
@@ -14,7 +15,7 @@ export default function Swap() {
                                 <div className="card">
                                     <div className="card-body">
                                         <p>You Pay</p>
-                                        <input style={{border:0}} />
+                                        <input value="0" />
                                     </div>
                                 </div>
                             </div>
