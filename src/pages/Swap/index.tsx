@@ -21,8 +21,8 @@ export default function Swap() {
                                             <input placeholder="0" type="number" />
                                         </div>
                                         <div className="col-md-3">
-                                            <button className="button">
-                                                <img src={token_default.logoURI} />
+                                            <button type="submit" className="button">
+                                                <img src={token_default.logoURI} alt={token_default.name} />
                                             </button>
                                         </div>
                                     </div>
