@@ -21,7 +21,7 @@ export default function Swap() {
                                             <input placeholder="0" type="number" />
                                         </div>
                                         <div className="col-md-3">
-                                            <button class="button">
+                                            <button className="button">
                                                 <img src={token_default.logoURI} />
                                             </button>
                                         </div>
