@@ -11,3 +11,8 @@ input:focus{
 box-currency{
     background-color: #F9FAFF;
 }
+
+.button{
+    width: 100%;
+    height: 100%;
+}

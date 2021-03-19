@@ -4,6 +4,7 @@ import * as currency from '../../constants/token/pancakeswap.json'
 import './style.css';
 
 export default function Swap() {
+    const token_default = currency.tokens[0]
     return (
         <>
             <div className="container">
@@ -20,20 +21,9 @@ export default function Swap() {
                                             <input placeholder="0" type="number" />
                                         </div>
                                         <div className="col-md-3">
-                                            <select className="form-select">
-                                                {currency.tokens.map((token) => {
-                                                    return <option value={token.name}>
-                                                        <div className="row">
-                                                            <div className="col">
-                                                                <img src={token.logoURI} alt={token.name} />
-                                                            </div>
-                                                            <div className="col">
-                                                                <h5>{token.symbol}</h5>
-                                                            </div>
-                                                        </div>
-                                                    </option>
-                                                })}
-                                            </select>
+                                            <button class="button">
+                                                <img src={token_default.logoURI} />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
