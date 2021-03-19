@@ -24,8 +24,7 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            <a href="#" onClick={() => setView(!view)}>
-            <div className="c-Dropdown__click" >
+            <button type="submit" className="c-Dropdown__click" onClick={() => setView(!view)} >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
@@ -34,8 +33,8 @@ export default function Swap() {
                 <span>{token_default.symbol}</span>
               </div>
               <div className="c-Dropdown__click__tab">{token_default.name}</div>
-            </div>
-            </a>
+            </button>
+            
           </div>
           <div className="c-Dropdown__tabs">
             <div className="c-Dropdown__tab c-Dropdown__tabs__primary">
