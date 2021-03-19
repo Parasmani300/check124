@@ -1,24 +1,24 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
-import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
+// import { ArrowDown } from 'react-feather'
+// import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
 import { ThemeContext } from 'styled-components'
-import AddressInputPanel from 'components/AddressInputPanel'
-import Card, { GreyCard } from 'components/Card'
-import { AutoColumn } from 'components/Column'
-import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
-import CurrencyInputPanel from 'components/CurrencyInputPanel'
+// import AddressInputPanel from 'components/AddressInputPanel'
+// import Card, { GreyCard } from 'components/Card'
+// import { AutoColumn } from 'components/Column'
+// import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
+// import CurrencyInputPanel from 'components/CurrencyInputPanel'
 import CardNav from 'components/CardNav'
-import { AutoRow, RowBetween } from 'components/Row'
+// import { AutoRow, RowBetween } from 'components/Row'
 import AdvancedSwapDetailsDropdown from 'components/swap/AdvancedSwapDetailsDropdown'
 import confirmPriceImpactWithoutFee from 'components/swap/confirmPriceImpactWithoutFee'
-import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
-import TradePrice from 'components/swap/TradePrice'
+// import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
+// import TradePrice from 'components/swap/TradePrice'
 import TokenWarningModal from 'components/TokenWarningModal'
 import SyrupWarningModal from 'components/SyrupWarningModal'
-import ProgressSteps from 'components/ProgressSteps'
+// import ProgressSteps from 'components/ProgressSteps'
 
-import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
+// import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
 import { useActiveWeb3React } from 'hooks'
 import { useCurrency } from 'hooks/Tokens'
 import { ApprovalState, useApproveCallbackFromTrade } from 'hooks/useApproveCallback'
@@ -27,19 +27,19 @@ import useWrapCallback, { WrapType } from 'hooks/useWrapCallback'
 import { Field } from 'state/swap/actions'
 import { useDefaultsFromURLSearch, useDerivedSwapInfo, useSwapActionHandlers, useSwapState } from 'state/swap/hooks'
 import { useExpertModeManager, useUserDeadline, useUserSlippageTolerance } from 'state/user/hooks'
-import { LinkStyledButton } from 'components/Shared'
+// import { LinkStyledButton } from 'components/Shared'
 import { maxAmountSpend } from 'utils/maxAmountSpend'
 import { computeTradePriceBreakdown, warningSeverity } from 'utils/prices'
-import Loader from 'components/Loader'
+// import Loader from 'components/Loader'
 import useI18n from 'hooks/useI18n'
-import PageHeader from 'components/PageHeader'
-import ConnectWalletButton from 'components/ConnectWalletButton'
+// import PageHeader from 'components/PageHeader'
+// import ConnectWalletButton from 'components/ConnectWalletButton'
 import Carousel from 'react-bootstrap/Carousel'
-import AppBody from '../AppBody'
+// import AppBody from '../AppBody'
 
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
-  const TranslateString = useI18n()
+  // const TranslateString = useI18n()
 
   // token warning stuff
   const [loadedInputCurrency, loadedOutputCurrency] = [
@@ -323,7 +323,7 @@ const Swap = () => {
             <div className="col-md-1"/>
             <div className="col-md-4">
               <div className="card shadow p-3 mb-5 bg-white rounded">
-              <AppBody>
+              {/* <AppBody>
                 <Wrapper id="swap-page">
                   <ConfirmSwapModal
                     isOpen={showConfirm}
@@ -520,7 +520,7 @@ const Swap = () => {
               </BottomGrouping>
             </CardBody>
           </Wrapper>
-      </AppBody>
+      </AppBody> */}
               </div>
       <AdvancedSwapDetailsDropdown trade={trade} />
             </div>
