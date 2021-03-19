@@ -1,4 +1,4 @@
-import React, from 'react';
+import React from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
 import * as currency from '../../constants/token/pancakeswap.json'
 import './style.css';
