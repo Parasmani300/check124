@@ -22,7 +22,17 @@ export default function Swap() {
                                         </div>
                                         <div className="col-md-3">
                                             <button type="submit" className="button">
-                                                <img src={token_default.logoURI} alt={token_default.name} />
+                                                <div className="row">
+                                                    <div className="col-5">
+                                                        <img src={token_default.logoURI} alt={token_default.name} />
+                                                    </div>
+                                                    <div className="col-5">
+                                                        <h5>{token_default.symbol}</h5>
+                                                    </div>
+                                                    <div className="col-2">
+                                                        <img src="https://img.icons8.com/android/24/4a90e2/expand-arrow.png"/>
+                                                    </div>
+                                                </div>
                                             </button>
                                         </div>
                                     </div>
