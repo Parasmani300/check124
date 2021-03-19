@@ -16,3 +16,301 @@ box-currency{
     width: 100%;
     height: 100%;
 }
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f1f4f6;
+  }
+  
+  .container {
+    width: 480px;
+    height: 660px;
+    padding: 24px 36px;
+    border-radius: 8px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .c-Dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #d3d5d8;
+  }
+  
+  .c-Dropdown__wrapper {
+    display: block;
+  }
+  
+  .c-Dropdown__header {
+    color: #495057;
+    margin-bottom: 24px;
+  }
+  
+  .c-Dropdown__header h2 {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .c-Dropdown__value {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 12px;
+    border-right: 1px solid #d3d5d8;
+  }
+  
+  .c-Dropdown__value__pretitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5d7079;
+  }
+  
+  .c-Dropdown__value__title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  
+  .c-Dropdown__click {
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .c-Dropdown__click__title {
+    font-size: 20px;
+    line-height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2px;
+  }
+  
+  .c-Dropdown__click__title img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+  
+  .c-Dropdown__click__tab {
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    line-height: 1;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #6c757d;
+    opacity: 0.5;
+  }
+  
+  .c-Dropdown__tab {
+    height: 40px;
+    border-radius: 0.25rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  
+  .c-Dropdown__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .c-Dropdown__tabs__primary {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-right: 10px;
+    color: #1e6641;
+    background-color: #d8f3e5;
+    border-color: #c8eedb;
+    font-size: 0.7rem;
+  }
+  
+  .c-Dropdown__tabs__secondary {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    border: 1px solid #d3d5d8;
+    font-size: 0.7rem;
+  }
+  
+  .c-Dropdown__button {
+    max-width: 300px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    background-color: #2575fc;
+    border-color: #2575fc;
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  .c-Search {
+    display: none;
+  }
+  
+  .c-Search__header {
+    position: relative;
+    color: #495057;
+    margin-bottom: 24px;
+  }
+  
+  .c-Search__header h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .c-Search__header__back {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    cursor: pointer;
+  }
+  
+  .c-Search__search {
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .c-Search__search input {
+    margin-right: 24px;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 16px;
+    height: 50px;
+    font-size: 16px;
+    border: none transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: whitesmoke;
+    border-radius: 5px;
+  }
+  
+  .c-Search__search__dropdown {
+    height: 36px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    border: 1px solid #d3d5d8;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .c-Search__options__title {
+    color: #495057;
+    margin-bottom: 8px;
+  }
+  
+  .c-Search__options__item {
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .c-Search__options__item:hover {
+    background-color: #e4e4e4;
+  }
+  
+  .c-Search__options__item__click {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+  }
+  
+  .c-Search__options__item__title {
+    color: #495057;
+    font-weight: bold;
+  }
+  
+  .c-Search__options__item__title span {
+    margin-left: 4px;
+    font-weight: 400;
+  }
+  
+  .c-Search__options__item__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .c-Search__options__item__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+  }
+  
+  .c-Search__options__item__tab {
+    padding: 2px 10px;
+    opacity: 0.5;
+    font-size: 75%;
+    color: #fff;
+    background-color: #83588a;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  /*# sourceMappingURL=main.css.map */
