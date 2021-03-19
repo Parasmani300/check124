@@ -24,10 +24,10 @@ export default function Swap() {
             <div className="c-Dropdown__click">
               <div className="c-Dropdown__click__title">
                 <img
-                  src="https://transak-bucket.s3.us-east-2.amazonaws.com/images/cryptocurrency/bitcoin_small.png"
+                  src={token_default.logoURI}
                   alt="trancasss"
                 />
-                <span>ETH</span>
+                <span>{token_default.symbol}</span>
               </div>
               <div className="c-Dropdown__click__tab">Eretheum Network</div>
             </div>
