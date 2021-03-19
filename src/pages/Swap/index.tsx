@@ -1,15 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
 import * as currency from '../../constants/token/pancakeswap.json'
 import './style.css';
 
+
 export default function Swap() {
+    const [view,setView] = useState(false)
     const token_default = currency.tokens[0]
     return (
         <>
             <div className="main">
       <div className="container">
         {/* this is a drop down */}
+        {view ? 
         <div className="c-Dropdown__wrapper">
           <div className="c-Dropdown__header">
             <h2>Buy Crypto to your wallet</h2>
@@ -21,7 +24,7 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            <div className="c-Dropdown__click">
+            <div className="c-Dropdown__click" onClick={() => setView(!view)}>
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
@@ -29,7 +32,7 @@ export default function Swap() {
                 />
                 <span>{token_default.symbol}</span>
               </div>
-              <div className="c-Dropdown__click__tab">Eretheum Network</div>
+              <div className="c-Dropdown__click__tab">{token_default.name}</div>
             </div>
           </div>
           <div className="c-Dropdown__tabs">
@@ -42,7 +45,7 @@ export default function Swap() {
           </div>
           <div className="c-Dropdown__button">Buy Now</div>
         </div>
-        {/* <!-- this is the search page --> */}
+        : 
         <div className="c-Search">
           <div className="c-Search__header">
             <h2>Select a crytocurrency</h2>
@@ -70,6 +73,7 @@ export default function Swap() {
             </div>
           </div>
         </div>
+        }
       </div>
     </div>
         </>
