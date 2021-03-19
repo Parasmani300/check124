@@ -11,7 +11,9 @@ export default function Swap() {
                         <div className="card">
                             <div className="card-body">
                                 <h4 className="card-title">Buy Crypto to Your Wallet</h4>
-                                <p>Hello there</p>
+                                <p>Hello there I am fine
+                                    
+                                </p>
                             </div>
                         </div>
                     </div>
