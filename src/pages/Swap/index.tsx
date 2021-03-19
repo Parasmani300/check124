@@ -7,7 +7,7 @@ export default function Swap() {
     const token_default = currency.tokens[0]
     return (
         <>
-            <div class="main">
+            <div className="main">
       <div className="container">
         {/* this is a drop down */}
         <div className="c-Dropdown__wrapper">
