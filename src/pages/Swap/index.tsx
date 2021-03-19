@@ -24,7 +24,7 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            <div type="submit" className="c-Dropdown__click" >
+            <div  className="c-Dropdown__click" >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
