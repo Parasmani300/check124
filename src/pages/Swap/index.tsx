@@ -30,7 +30,7 @@ export default function Swap() {
                                                         <h5>{token_default.symbol}</h5>
                                                     </div>
                                                     <div className="col-2">
-                                                        <img src="https://img.icons8.com/android/24/4a90e2/expand-arrow.png"/>
+                                                        <img src="https://img.icons8.com/android/24/4a90e2/expand-arrow.png" alt="arrow-down-img" />
                                                     </div>
                                                 </div>
                                             </button>
