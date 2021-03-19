@@ -13,10 +13,8 @@ export default function Swap() {
                             <div className="card-body">
                                 <h4 className="card-title">Buy Crypto to Your Wallet</h4>
                                 <div className="card">
-                                    <div className="card-body">
-                                        <p>You Pay</p>
-                                        <input placeholder="0" />
-                                    </div>
+                                    <p>You Pay</p>
+                                    <input placeholder="0" type="number" />
                                 </div>
                             </div>
                         </div>
