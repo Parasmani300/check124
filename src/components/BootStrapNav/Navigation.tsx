@@ -11,11 +11,11 @@ export default function Navigation() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/swap">Swap</Nav.Link>
-                        <Nav.Link href="/find">Find</Nav.Link>
+                        <Nav.Link href="#swap">Swap</Nav.Link>
+                        <Nav.Link href="#find">Find</Nav.Link>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="/pool">Pool</Nav.Link>
+                    <Nav.Link href="#pool">Pool</Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
                         Profile
                     </Nav.Link>
