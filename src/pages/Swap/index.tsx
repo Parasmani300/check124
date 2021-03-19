@@ -1,5 +1,5 @@
 import React from 'react';
-import ConnectWalletButton from 'components/ConnectWalletButton';
+// import ConnectWalletButton from 'components/ConnectWalletButton';
 
 export default function Swap() {
     return (
