@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
+import React, from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
 import * as currency from '../../constants/token/pancakeswap.json'
 import './style.css';
 
 
 export default function Swap() {
-    const [view,setView] = useState(false)
+    // const [view,setView] = useState(false)
     const token_default = currency.tokens[0]
     return (
         <>
@@ -24,7 +24,7 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            <button type="submit" className="c-Dropdown__click" onClick={() => setView(!view)} >
+            <div type="submit" className="c-Dropdown__click" >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
@@ -33,7 +33,7 @@ export default function Swap() {
                 <span>{token_default.symbol}</span>
               </div>
               <div className="c-Dropdown__click__tab">{token_default.name}</div>
-            </button>
+            </div>
             
           </div>
           <div className="c-Dropdown__tabs">
