@@ -7,3 +7,7 @@ input{
 input:focus{
     outline: none;
 }
+
+box-currency{
+    background-color: #F9FAFF;
+}
