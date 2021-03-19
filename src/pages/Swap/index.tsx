@@ -15,7 +15,7 @@ export default function Swap() {
                                 <div className="card">
                                     <div className="card-body">
                                         <p>You Pay</p>
-                                        <input value="0" />
+                                        <input placeholder="0" />
                                     </div>
                                 </div>
                             </div>
