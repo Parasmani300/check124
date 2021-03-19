@@ -25,6 +25,7 @@ export default function Swap() {
               <div className="c-Dropdown__click__title">
                 <img
                   src="https://transak-bucket.s3.us-east-2.amazonaws.com/images/cryptocurrency/bitcoin_small.png"
+                  alt="trancasss"
                 />
                 <span>ETH</span>
               </div>
@@ -51,7 +52,7 @@ export default function Swap() {
             <input
               type="text"
               placeholder="Type a currency"
-              class="c-Search__input"
+              className="c-Search__input"
             />
             <select className="c-Search__search__dropdown">
               <option value="all" selected>ALL NETWORK</option>
