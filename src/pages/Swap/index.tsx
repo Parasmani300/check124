@@ -22,7 +22,7 @@ export default function Swap() {
                                         <div className="col-md-3">
                                             <select className="form-select">
                                                 {currency.tokens.map((token) => {
-                                                    <option value={token.name}>
+                                                    return <option value={token.name}>
                                                         <div className="row">
                                                             <div className="col">
                                                                 <img src={token.logoURI} alt={token.name} />
