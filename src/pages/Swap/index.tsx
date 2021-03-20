@@ -78,6 +78,7 @@ export default function Swap() {
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
               {currency?.tokens.map((token) => {
+                if(token.logoURI){
                 return <div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {handleClick(token)}} onKeyDown={() => {setOpen(!open)}}>
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
@@ -86,7 +87,7 @@ export default function Swap() {
                 </div>
                 <div className="c-Search__options__item__tab">{token.decimals}</div>
               </div>
-              })}
+              }})}
             </div>
           </div>
         </div>
