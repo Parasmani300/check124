@@ -6,7 +6,7 @@ import './style.css';
 
 export default function Swap() {
     // const [view,setView] = useState(false)
-    const token_default = currency.tokens[0];
+    const [token_default,setTokenDefault] = useState(currency.tokens[0]);
     const [open,setOpen] = useState(true)
     // const handleClick = () =>{
       
@@ -77,7 +77,7 @@ export default function Swap() {
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
               {currency?.tokens.map((token) => {
-                return <div className="c-Search__options__item">
+                return <div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {setOpen(!open) && setTokenDefault(token)}} onKeyDown={() => {setOpen(!open)}}>
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
                   <img className="c-Search__options__item__icon" src={token.logoURI} alt={token.name}/>
