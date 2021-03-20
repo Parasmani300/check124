@@ -24,7 +24,8 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            <div  className="c-Dropdown__click" >
+            // eslint-disable-line no-use-before-define
+            <div  className="c-Dropdown__click"  >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
@@ -46,7 +47,7 @@ export default function Swap() {
           </div>
           <div className="c-Dropdown__button">Buy Now</div>
         </div>
-        : 
+        {/* This is the second componennt */}
         <div className="c-Search">
           <div className="c-Search__header">
             <h2>Select a crytocurrency</h2>
