@@ -76,6 +76,16 @@ export default function Swap() {
             <div className="c-Search__options__title">All currencies available</div>
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
+              {currency?.tokens.map((token) => {
+                return <div class="c-Search__options__item">
+                <div class="c-Search__options__item__click" id={token.address}></div>
+                <div class="c-Search__options__item__info">
+                  <img class="c-Search__options__item__icon" src={token.logoURI}/>
+                  <div class="c-Search__options__item__title">{token.symbol}<span>{token.name}</span></div>
+                </div>
+                <div class="c-Search__options__item__tab">{token.decimals}</div>
+              </div>
+              })}
             </div>
           </div>
         </div>
