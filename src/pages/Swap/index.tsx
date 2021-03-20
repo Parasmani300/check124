@@ -77,9 +77,8 @@ export default function Swap() {
             <div className="c-Search__options__title">All currencies available</div>
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
-              {currency?.tokens.map((token) => {
-                if(token.logoURI){
-                return <div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {handleClick(token)}} onKeyDown={() => {setOpen(!open)}}>
+              {currency?.tokens.filter(t => t.logoURI).map((token) => {
+                return<div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {handleClick(token)}} onKeyDown={() => {setOpen(!open)}}>
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
                   <img className="c-Search__options__item__icon" src={token.logoURI} alt={token.name}/>
@@ -87,9 +86,7 @@ export default function Swap() {
                 </div>
                 <div className="c-Search__options__item__tab">{token.decimals}</div>
               </div>
-              }else{
-                return <div />
-              }})}
+              })}
             </div>
           </div>
         </div>
