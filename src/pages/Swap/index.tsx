@@ -88,7 +88,7 @@ export default function Swap() {
                 <div className="c-Search__options__item__tab">{token.decimals}</div>
               </div>
               }else{
-                <div />
+                return <div />
               }})}
             </div>
           </div>
