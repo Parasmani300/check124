@@ -25,7 +25,7 @@ export default function Swap() {
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
             
-            <div role="button"  className="c-Dropdown__click"  onClick={()=> {console.log("snxjcnj")}} onKeyDown={() => {console.log("cdcdjcd")}} >
+            <div role="button" tabIndex={0}  className="c-Dropdown__click"  onClick={()=> {console.log("snxjcnj")}} onKeyDown={() => {console.log("cdcdjcd")}} >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
