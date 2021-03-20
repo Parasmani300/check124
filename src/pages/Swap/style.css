@@ -181,7 +181,8 @@ box-currency{
   }
   
   .c-Search {
-    display: none;
+    display: block;
+  
   }
   
   .c-Search__header {
