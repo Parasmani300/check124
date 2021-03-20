@@ -7,7 +7,7 @@ import './style.css';
 export default function Swap() {
     // const [view,setView] = useState(false)
     const token_default = currency.tokens[0];
-    const [open,setOpen] = useState(false)
+    const [open,setOpen] = useState(true)
     // const handleClick = () =>{
       
     // }
