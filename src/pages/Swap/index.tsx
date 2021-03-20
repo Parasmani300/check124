@@ -24,8 +24,8 @@ export default function Swap() {
               </div>
               <div className="c-Dropdown__value__title">97869869</div>
             </div>
-            {/* // eslint-disable-line no-use-before-define */}
-            <div  className="c-Dropdown__click"  >
+            
+            <div  className="c-Dropdown__click"  onClick={()=> {console.log("snxjcnj")}} >
               <div className="c-Dropdown__click__title">
                 <img
                   src={token_default.logoURI}
