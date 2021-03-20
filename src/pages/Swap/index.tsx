@@ -16,7 +16,7 @@ export default function Swap() {
             <div className="main">
       <div className="container">
         {/* this is a drop down */}
-    
+        {open ? 
         <div className="c-Dropdown__wrapper">
           <div className="c-Dropdown__header">
             <h2>Buy Crypto to your wallet</h2>
@@ -51,7 +51,7 @@ export default function Swap() {
           </div>
           <div className="c-Dropdown__button">Buy Now</div>
         </div>
-        {/* This is the second componennt */}
+        :
         <div className="c-Search">
           <div className="c-Search__header">
             <h2>Select a crytocurrency</h2>
@@ -79,7 +79,7 @@ export default function Swap() {
             </div>
           </div>
         </div>
-        
+        }
       </div>
     </div>
         </>
