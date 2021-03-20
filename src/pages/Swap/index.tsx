@@ -80,7 +80,7 @@ export default function Swap() {
                 return <div className="c-Search__options__item">
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
-                  <img className="c-Search__options__item__icon" src={token.logoURI}/>
+                  <img className="c-Search__options__item__icon" src={token.logoURI} alt={token.name}/>
                   <div className="c-Search__options__item__title">{token.symbol}<span>{token.name}</span></div>
                 </div>
                 <div className="c-Search__options__item__tab">{token.decimals}</div>
