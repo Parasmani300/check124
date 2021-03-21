@@ -7,7 +7,7 @@ export default function Navigation() {
         <>
             <div className="container-fluid">
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#home">The-Website</Navbar.Brand>
+                <Navbar.Brand href="#home">Ghost Protocol</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
