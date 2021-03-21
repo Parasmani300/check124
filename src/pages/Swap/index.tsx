@@ -14,8 +14,8 @@ export default function Swap() {
     }
     return (
         <>
-            <div className="main">
-      <div className="container1">
+      <div className="main">
+        <div className="container1">
         {/* this is a drop down */}
         {open ? 
         <div className="c-Dropdown__wrapper">
@@ -42,6 +42,27 @@ export default function Swap() {
             </div>
             
           </div>
+          {/* The second input */}
+          <div className="c-Dropdown">
+            <div className="c-Dropdown__value">
+              <div className="c-Dropdown__value__pretitle">
+                You Receive (estimate)
+              </div>
+              <div className="c-Dropdown__value__title">97869869</div>
+            </div>
+            
+            <div role="button" tabIndex={0}  className="c-Dropdown__click"  onClick={()=> {setOpen(!open)}} onKeyDown={() => {setOpen(!open)}} >
+              <div className="c-Dropdown__click__title">
+                <img
+                  src={token_default.logoURI}
+                  alt="trancasss"
+                />
+                <span>{token_default.symbol}</span>
+              </div>
+              <div className="c-Dropdown__click__tab">{token_default.name}</div>
+            </div>
+          </div>
+          {/*  */}
           <div className="c-Dropdown__tabs">
             <div className="c-Dropdown__tab c-Dropdown__tabs__primary">
               Slippage 0%
@@ -52,6 +73,7 @@ export default function Swap() {
           </div>
           <div className="c-Dropdown__button">Buy Now</div>
         </div>
+        
         :
         <div className="c-Search">
           <div className="c-Search__header">
