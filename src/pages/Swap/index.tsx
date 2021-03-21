@@ -15,7 +15,7 @@ export default function Swap() {
     return (
         <>
             <div className="main">
-      <div className="container">
+      <div className="container1">
         {/* this is a drop down */}
         {open ? 
         <div className="c-Dropdown__wrapper">
