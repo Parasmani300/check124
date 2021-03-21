@@ -17,10 +17,16 @@ export default function Swap() {
     }
 
     const handleSecondClick = (token:any) =>{
-      setSecondOpen(!secondOpen);
+      setSecondOpen(true);
       setTokenTwo(token);
       setOpen(true);
     }
+
+    const handleBack = () => {
+      setOpen(true);
+      setSecondOpen(true);
+    }
+
     return (
         <>
       <div className="main">
@@ -89,7 +95,7 @@ export default function Swap() {
         <div className="c-Search">
           <div className="c-Search__header">
             <h2>Select a crytocurrency</h2>
-            <div className="c-Search__header__back">Back</div>
+            <div className="c-Search__header__back" role="button" tabIndex={0}   onClick={()=> {handleBack()}} onKeyDown={() => {handleBack()}} >Back</div>
           </div>
           <div className="c-Search__search">
             <input
