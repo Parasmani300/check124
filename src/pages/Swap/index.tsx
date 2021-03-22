@@ -5,7 +5,7 @@ import './style.css';
 
 
 export default function Swap() {
-    const [currency,setCurrency] = useState(currency_token);
+    const [currency,setCurrency] = useState(currency_token.tokens);
     // const [view,setView] = useState(false)
     const [token_default,setTokenDefault] = useState(currency.tokens[0]);
     const [tokenTwo,setTokenTwo] = useState(currency.tokens[1]);
