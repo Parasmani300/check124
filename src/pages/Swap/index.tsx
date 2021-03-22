@@ -30,7 +30,7 @@ export default function Swap() {
 
     const filterCurrencyList = (e) => {
       const searchString = e.target.value?.toLocaleLowerCase();
-      const filteredDataset = currency.token?.filter((item) => 
+      const filteredDataset = currency.tokens?.filter((item) => 
         item.name.toLocaleLowerCase().includes(searchString)
       );
       if(filteredDataset.length > 0){
