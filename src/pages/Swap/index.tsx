@@ -1,10 +1,11 @@
 import React,{useState} from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
-import * as currency from '../../constants/token/pancakeswap.json'
+import * as currency_token from '../../constants/token/pancakeswap.json'
 import './style.css';
 
 
 export default function Swap() {
+    const [currency,setCurrency] = useState(currency_token);
     // const [view,setView] = useState(false)
     const [token_default,setTokenDefault] = useState(currency.tokens[0]);
     const [tokenTwo,setTokenTwo] = useState(currency.tokens[1]);
@@ -25,6 +26,19 @@ export default function Swap() {
     const handleBack = () => {
       setOpen(true);
       setSecondOpen(true);
+    }
+
+    const filterCurrencyList = (e) => {
+      let searchString = e.target.value?.toLocaleLowerCase();
+      const filteredDataset = currency?.filter((item) => 
+        item.name.toLocaleLowerCase().includes(searchString)
+      );
+      if(filteredDataset.length > 0){
+        setCurrency(filteredDataset);
+      }else{
+        setCurrency(currency_token);
+      }
+      
     }
 
     return (
@@ -102,6 +116,7 @@ export default function Swap() {
               type="text"
               placeholder="Type a currency"
               className="c-Search__input"
+              onChange={(e)=>filterCurrencyList(e)}
             />
             <select className="c-Search__search__dropdown">
               <option value="all" selected>ALL NETWORK</option>
