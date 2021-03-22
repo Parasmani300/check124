@@ -15,17 +15,20 @@ export default function Swap() {
       setOpen(true);
       setSecondOpen(true);
       setTokenDefault(token);
+      setCurrency(currency_token.tokens)
     }
 
     const handleSecondClick = (token:any) =>{
       setSecondOpen(true);
       setTokenTwo(token);
       setOpen(true);
+      setCurrency(currency_token.tokens);
     }
 
     const handleBack = () => {
       setOpen(true);
       setSecondOpen(true);
+
     }
 
     const filterCurrencyList = (e) => {
