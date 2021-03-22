@@ -29,7 +29,7 @@ export default function Swap() {
     }
 
     const filterCurrencyList = (e) => {
-      let searchString = e.target.value?.toLocaleLowerCase();
+      const searchString = e.target.value?.toLocaleLowerCase();
       const filteredDataset = currency?.filter((item) => 
         item.name.toLocaleLowerCase().includes(searchString)
       );
