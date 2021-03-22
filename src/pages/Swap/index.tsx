@@ -36,7 +36,8 @@ export default function Swap() {
       const filteredDataset = currency?.filter((item) => 
         item.name.toLocaleLowerCase().includes(searchString)
       );
-      if(filteredDataset.length > 0){
+
+      if(e.target.value.length > 0){
         setCurrency(filteredDataset);
       }else{
         setCurrency(currency_token.tokens);
