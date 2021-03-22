@@ -7,8 +7,8 @@ import './style.css';
 export default function Swap() {
     const [currency,setCurrency] = useState(currency_token.tokens);
     // const [view,setView] = useState(false)
-    const [token_default,setTokenDefault] = useState(currency.tokens[0]);
-    const [tokenTwo,setTokenTwo] = useState(currency.tokens[1]);
+    const [token_default,setTokenDefault] = useState(currency[0]);
+    const [tokenTwo,setTokenTwo] = useState(currency[1]);
     const [open,setOpen] = useState(true);
     const [secondOpen,setSecondOpen] = useState(true)
     const handleClick = (token:any) =>{
@@ -30,13 +30,13 @@ export default function Swap() {
 
     const filterCurrencyList = (e) => {
       const searchString = e.target.value?.toLocaleLowerCase();
-      const filteredDataset = currency.tokens?.filter((item) => 
+      const filteredDataset = currency?.filter((item) => 
         item.name.toLocaleLowerCase().includes(searchString)
       );
       if(filteredDataset.length > 0){
         setCurrency(filteredDataset);
       }else{
-        setCurrency(currency_token);
+        setCurrency(currency_token.tokens);
       }
       
     }
@@ -131,7 +131,7 @@ export default function Swap() {
             <div className="c-Search__options__title">All currencies available</div>
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
-              {currency?.tokens.filter(t => t.logoURI).map((token) => {
+              {currency.filter(t => t.logoURI).map((token) => {
                 return<div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {handleClick(token)}} onKeyDown={() => {setOpen(!open)}}>
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
@@ -172,7 +172,7 @@ export default function Swap() {
             <div className="c-Search__options__title">All currencies available</div>
             <div className="c-Search__options__list">
               {/* <!-- Data is injected here --> */}
-              {currency?.tokens.filter(t => t.logoURI).map((token) => {
+              {currency.filter(t => t.logoURI).map((token) => {
                 return<div className="c-Search__options__item" role="button" tabIndex={0}   onClick={()=> {handleSecondClick(token)}} onKeyDown={() => {setSecondOpen(!secondOpen)}}>
                 <div className="c-Search__options__item__click" id={token.address} />
                 <div className="c-Search__options__item__info">
