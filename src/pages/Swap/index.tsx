@@ -162,6 +162,7 @@ export default function Swap() {
               type="text"
               placeholder="Type a currency"
               className="c-Search__input"
+              onClick={()=> {setSecondOpen(!secondOpen)}} onKeyDown={() => {setSecondOpen(!secondOpen)}}
             />
             <select className="c-Search__search__dropdown">
               <option value="all" selected>ALL NETWORK</option>
