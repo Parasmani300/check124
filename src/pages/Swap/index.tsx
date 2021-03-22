@@ -1,5 +1,6 @@
-import React,{useState} from 'react';
+import React,{useState,useCallback} from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
+import {useSwapActionHandlers} from 'state/swap/hooks'
 import * as currency_token from '../../constants/token/pancakeswap.json'
 import './style.css';
 
@@ -10,7 +11,18 @@ export default function Swap() {
     const [token_default,setTokenDefault] = useState(currency[0]);
     const [tokenTwo,setTokenTwo] = useState(currency[1]);
     const [open,setOpen] = useState(true);
-    const [secondOpen,setSecondOpen] = useState(true)
+    const [secondOpen,setSecondOpen] = useState(true);
+
+    const {onUserInput} = useSwapActionHandlers()
+
+    const handleTypeInput = (e) => useCallback(
+      (value: string) => {
+        onUserInput(e.target.value, value)
+      },
+      [onUserInput]
+    );
+
+
     const handleClick = (token:any) =>{
       setOpen(true);
       setSecondOpen(true);
@@ -81,8 +93,8 @@ export default function Swap() {
               <div className="c-Dropdown__value__pretitle">
                 You Receive (estimate)
               </div>
-              <div className="c-Dropdown__value__title">97869869</div>
-            </div>
+              <input className="c-Dropdown__value__title" placeholder="98765" onChange={e => handleTypeInput(e)} />
+            </div> 
             
             <div role="button" tabIndex={0}  className="c-Dropdown__click"  onClick={()=> {setSecondOpen(!secondOpen)}} onKeyDown={() => {setSecondOpen(!secondOpen)}} >
               <div className="c-Dropdown__click__title">
