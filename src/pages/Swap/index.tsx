@@ -1,4 +1,4 @@
-import React,{useState,useCallback} from 'react';
+import React,{useState} from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
 // import {useSwapActionHandlers} from 'state/swap/hooks'
 import * as currency_token from '../../constants/token/pancakeswap.json'
