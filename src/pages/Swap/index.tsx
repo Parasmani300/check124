@@ -85,7 +85,7 @@ export default function Swap() {
               <div className="c-Dropdown__value__pretitle">
                 You Receive (estimate)
               </div>
-              <input className="c-Dropdown__value__title" placeholder="98765" onChange={e => handleTypeInput(e)} />
+              <input className="c-Dropdown__value__title" placeholder="98765"  />
             </div> 
             
             <div role="button" tabIndex={0}  className="c-Dropdown__click"  onClick={()=> {setSecondOpen(!secondOpen)}} onKeyDown={() => {setSecondOpen(!secondOpen)}} >
