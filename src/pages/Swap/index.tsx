@@ -1,6 +1,6 @@
 import React,{useState,useCallback} from 'react';
 // import ConnectWalletButton from 'components/ConnectWalletButton';
-import {useSwapActionHandlers} from 'state/swap/hooks'
+// import {useSwapActionHandlers} from 'state/swap/hooks'
 import * as currency_token from '../../constants/token/pancakeswap.json'
 import './style.css';
 
@@ -13,14 +13,6 @@ export default function Swap() {
     const [open,setOpen] = useState(true);
     const [secondOpen,setSecondOpen] = useState(true);
 
-    const {onUserInput} = useSwapActionHandlers()
-
-    const handleTypeInput = (e) => useCallback(
-      (value: string) => {
-        onUserInput(e.target.value, value)
-      },
-      [onUserInput]
-    );
 
 
     const handleClick = (token:any) =>{
